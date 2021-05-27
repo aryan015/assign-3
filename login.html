@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: rgb(45, 45, 221);
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 15px 30px;
+        font-size: 17px;
+        padding: 8px;
+        background-image: url(/img/bg2.jpg);
+        background-repeat: no-repeat;
+        color: rgb(0, 0, 0);
+      }
+      .container {
+        background-color: #e4b764c4;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        width: 50vw;
+        margin: 75px auto;
+      }
+      hr {
+        height: 1px;
+        background-color: #000;
+        border: none;
+      }
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+      }
+
+      .main-heading {
+        text-align: center;
+      }
+
+      input[type="submit"] {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 18px;
+      }
+      input[type="submit"]:hover {
+        background-color: #d8d8d8;
+        color: rgb(0, 0, 0);
+      }
+
+      @media screen and (max-width: 700px) {
+        body {
+          padding: 5px;
+        }
+        .container {
+          font-size: 0.6rem;
+          width: 80vw;
+        }
+        input[type="email"],
+        input[type="password"] {
+          padding: 5px;
+        }
+        h2 {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="url-where-you-want-to-submit-your-code" method="get">
+        <h1 class="main-heading">Login Form</h1>
+        <hr />
+
+        <p>
+          Email: *
+          <input
+            type="email"
+            name="email"
+            id="email"
+            autocomplete="off"
+            required
+          />
+        </p>
+        <p>
+          Password: *
+          <input type="password" name="password" id="password" required />
+        </p>
+
+        <input type="submit" value="Signup" />
+        <a href="/signup.html">Don't have an account? Signup here</a>
+      </form>
+    </div>
+  </body>
+</html>
